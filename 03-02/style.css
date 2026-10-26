@@ -1,11 +1,13 @@
 .sticker {
   animation: rotate 10s linear infinite;
+  animation-play-state: paused;
 }
 
+.sticker:hover {
+  animation-play-state: running;
+}
 @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
+ 
   100% {
     transform: rotate(360deg);
   }
