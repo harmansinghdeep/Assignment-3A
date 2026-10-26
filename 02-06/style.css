@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-
+h1 {
+  animation: typing 3s steps(14),
+             blinking 0.5s steps(1) infinite;
+}
 
 
 h1 {
@@ -10,6 +13,14 @@ h1 {
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em; 
+}
+@keyframes typing {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 
