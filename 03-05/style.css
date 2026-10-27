@@ -13,6 +13,17 @@ h2 {
   to {transform:rotateX(0deg);}
 }
 
+@keyframes flick {
+  0%, 100% {
+    transform: rotateX(-180deg) rotateZ(0deg);
+    animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+  }
+  50% {
+    transform: rotateX(-180deg) rotateZ(10deg);
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+}
+
 @keyframes flipDown {
   to {transform:rotateX(-180deg);}
 }
